@@ -1,5 +1,5 @@
 ---
-title: "Backing up the archive"
+title: "Download the archive"
 description: "How to download a copy of Ace Archive"
 menu:
   docs:
