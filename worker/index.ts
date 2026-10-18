@@ -67,12 +67,6 @@ const headerPatterns: HeaderPatterns = {
   "\\.jsonld$": {
     "Content-Type": jsonLdMediaType,
   },
-  // Headers specific to Stoplight Elements, the app we embed for rendering the
-  // OpenAPI docs.
-  "/docs/api/.+": {
-    "Content-Security-Policy":
-      "default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; connect-src https://raw.githubusercontent.com https://api.acearchive.lgbt; frame-ancestors 'none';",
-  },
 };
 
 // Static media used to be served from this site, but now lives in a separate
