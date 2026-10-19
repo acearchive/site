@@ -1,24 +1,41 @@
 ---
-title: "The Ace Archive API"
-description: "How to use the Ace Archive REST API"
+title: "Using the API"
+description: "How to use the Ace Archive API"
 menu:
   docs:
     parent: "contributing"
-weight: 204
-draft: true
+weight: 205
 ---
 
-Ace Archive has a minimal REST API developers can use to query information about
-artifacts in the archive.
+If you want to export data from Ace Archive, you can either download the nightly
+[data export]({{< ref "docs/contributing/export.md" >}}), or you can call this
+API.
 
-This API is currently experimental. The API is `v0`, which means that
-**backwards-incompatible** changes could happen **at any time**.
+Instead of a traditional REST API, Ace Archive uses
+[JSON-LD](https://json-ld.org/) to provide rich metadata about items in the
+collection in a machine-readable format. Rather than have a dedicated API
+endpoint, pages on this website can return either a web page or a JSON-LD
+document via [HTTP content
+negotiation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Content_negotiation).
 
-To help with development, at the bottom of each artifact page on this site is
-that artifact's unique ID in the API.
+For example, if you call the following endpoint with an `Accept:
+application/ld+json` header, you'll get [this JSON-LD
+document](https://acearchive.lgbt/artifacts/orlando-the-asexual-manifesto/index.jsonld).
 
-Check out the API docs below.
+```
+https://acearchive.lgbt/artifacts/orlando-the-asexual-manifesto
+```
 
-{{< link-button path="/docs/api/index.md" >}}
-Read the docs
-{{< /link-button >}}
+Try querying following endpoints to see what JSON-LD data they return.
+
+- [https://acearchive.lgbt/artifacts/](https://acearchive.lgbt/artifacts/index.jsonld)
+- [https://acearchive.lgbt/artifacts/orlando-the-asexual-manifesto/](https://acearchive.lgbt/artifacts/orlando-the-asexual-manifesto/index.jsonld)
+- [https://acearchive.lgbt/collections/Newsjournals and Underground Press/](https://acearchive.lgbt/collections/Newsjournals%20and%20Underground%20Press/index.jsonld)
+- [https://acearchive.lgbt/identities/Aromantic/](https://acearchive.lgbt/identities/Aromantic/index.jsonld)
+- [https://acearchive.lgbt/people/Jim Sinclair/](https://acearchive.lgbt/people/Jim%20Sinclair/index.jsonld)
+
+Ace Archive uses the [Schema.org](https://schema.org/) vocabulary to describe
+items in the collection. The specific properties we use are not currently
+considered stable API. Additionally, because two semantically identical JSON-LD
+documents can be structured very differently, the exact JSON representation of
+this metadata isn't guaranteed to be stable.
