@@ -41,3 +41,13 @@ email us.
 {{< link-button path="/docs/contributing/by-email.md" >}}
 Propose content
 {{< /link-button >}}
+
+<hr>
+
+Information networks are more resilient when they're more distributed. You can
+join the ranks of guerilla archivists by downloading a full copy of Ace Archive
+to back up, mirror, and share.
+
+{{< link-button path="/docs/contributing/export.md" >}}
+Download the archive
+{{< /link-button >}}
