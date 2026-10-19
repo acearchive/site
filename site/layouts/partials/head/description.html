@@ -1,0 +1,14 @@
+{{- /* The plain-text description of a page for meta tags. Artifact pages come
+  from the content adapter and have no front matter description, so they use
+  their Markdown summary instead. */ -}}
+{{- $description := .Site.Params.description -}}
+{{- with .Description -}}
+  {{- $description = . -}}
+{{- else -}}
+  {{- if and (eq .Section "artifacts") .IsPage .Params.summary -}}
+    {{- $description = .Params.summary | markdownify -}}
+  {{- else if and .IsPage .Summary -}}
+    {{- $description = .Summary -}}
+  {{- end -}}
+{{- end -}}
+{{- return ($description | plainify | htmlUnescape | strings.TrimSpace) -}}

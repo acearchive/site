@@ -34,11 +34,7 @@
     {{ .Site.Params.title }}
   </title>
 {{ end -}}
-{{ with .Description -}}
-  <meta name="description" content="{{ . | plainify }}" />
-{{ else -}}
-  <meta name="description" content="{{ .Site.Params.description }}" />
-{{ end -}}
+<meta name="description" content="{{ partial "head/description.html" . }}" />
 {{ if $.Scratch.Get "paginator" }}
   <link rel="canonical" href="{{ .Paginator.URL | absURL }}" />
   {{ if .Paginator.HasPrev -}}
