@@ -58,6 +58,26 @@
             Copy URL
           </span>
         </button>
+        <div
+          id="short-url-confirmation"
+          hidden
+          class="mt-2"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          <span class="d-flex gap-2 align-items-center">
+            <svg
+              height="18"
+              width="18"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              {{ partial "use-icon.html" "clipboard-check" }}
+            </svg>
+            Link copied
+          </span>
+        </div>
       </div>
     </main>
   </div>
