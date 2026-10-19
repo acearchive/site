@@ -23,10 +23,6 @@ module.exports = {
         "page-item",
         "page-link",
 
-        // These are from the artifact submission form.
-        "btn-secondary",
-        "form-check-input",
-
         ...whitelister(["./node_modules/bootstrap/scss/_tooltip.scss"]),
       ],
     }),

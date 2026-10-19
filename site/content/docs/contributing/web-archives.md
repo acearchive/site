@@ -53,10 +53,3 @@ site just like you would on the Wayback Machine.
 
 Whenever you add a WARC file to an artifact, you should also include a link to
 this tool.
-
-In the form below, enter the URL slug of the artifact, the file name you used in
-the artifact submission (which must end in `.warc` for the tool to work), and
-the URL of the archived web page you want users to land on, and it will generate
-the URL you should include in the artifact file.
-
-{{< replayweb-url >}}

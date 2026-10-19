@@ -3,9 +3,8 @@
     "target": "es2017",
     "strict": true,
     "strictNullChecks": true,
-    "jsx": "react-jsx",
     "esModuleInterop": true,
-    "typeRoots": ["node_modules/yup"],
+    "types": ["bootstrap"],
     "moduleResolution": "node"
   }
 }

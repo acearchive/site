@@ -4,13 +4,6 @@ env:
 extends:
   - "eslint:recommended"
   - "plugin:@typescript-eslint/recommended"
-  - "plugin:react/recommended"
-  - "plugin:react-hooks/recommended"
 parserOptions:
   ecmaVersion: latest
   sourceType: module
-rules:
-  "react/prop-types": 0
-settings:
-  react:
-    version: detect

@@ -5,6 +5,10 @@ menu:
   docs:
     parent: "contributing"
 weight: 202
+aliases:
+  - "/submit"
+  - "/new-artifact"
+  - "/docs/contributing/pull-request"
 ---
 
 If you want to propose content to be added to the archive, you can email us:

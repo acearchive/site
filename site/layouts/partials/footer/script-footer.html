@@ -1,8 +1,3 @@
-{{- $artifacts := dict }}
-{{- range $artifact := (.Site.GetPage "/artifacts/_index.md").Pages -}}
-  {{- $artifacts = $artifacts | merge (dict $artifact.Params.slug $artifact.Params) -}}
-{{- end -}}
-
 {{- $iconSprite := resources.Get "icons/bootstrap-icons.svg" | resources.Minify | resources.Fingerprint -}}
 
 {{ $docsPages := where .Site.Pages "Section" "docs" }}
@@ -16,8 +11,6 @@
 
 {{ $bs := resources.Get "js/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" -}}
 {{ $highlight := resources.Get "js/highlight.js" | js.Build -}}
-{{ $replayWeb := resources.Get "js/replayweb-url.ts" | js.Build -}}
-{{ $artifactForm := resources.Get "js/artifact-form/App.tsx" | js.Build (dict "params" (dict "artifacts" $artifacts "iconSpritePath" $iconSprite.Permalink)) -}}
 {{ $clipboardCopyButton := resources.Get "js/clipboard-copy-button.ts" | js.Build -}}
 {{ $tooltips := resources.Get "js/tooltips.ts" | js.Build -}}
 
@@ -48,18 +41,12 @@
 
 {{ $jsBundle := resources.Concat "js/main.ts" $jsSlice | js.Build -}}
 
-{{ $loadReplayWeb := .Page.Scratch.Get "replayweb" -}}
-{{ $loadArtifactForm := eq .Type "artifact-form" -}}
 {{ $loadSearch := eq .Section "docs" "archive" "artifacts" "identities" "decades" "people" "collections" -}}
 {{ $loadArtifactPage := eq .Section "artifacts" -}}
 
 {{ if eq (hugo.Environment) "development" -}}
   {{ if .Site.Params.options.bootStrapJs -}}
     <script defer src="{{ $bs.RelPermalink }}"></script>
-  {{ end -}}
-
-  {{ if $loadArtifactForm -}}
-    <script defer src="{{ $artifactForm.RelPermalink }}"></script>
   {{ end -}}
 
   {{ if $loadArtifactPage -}}
@@ -76,10 +63,6 @@
     <script defer src="{{ $search.RelPermalink }}"></script>
   {{ end -}}
 
-  {{ if $loadReplayWeb -}}
-    <script defer src="{{ $replayWeb.RelPermalink }}"></script>
-  {{ end -}}
-
   <script defer src="{{ $clipboardCopyButton.RelPermalink }}"></script>
   <script defer src="{{ $tooltips.RelPermalink }}"></script>
 {{ else -}}
@@ -87,9 +70,7 @@
   {{ $search := $search | minify | fingerprint "sha512" -}}
   {{ $bs := $bs | fingerprint "sha512" -}}
   {{ $highlight := $highlight | minify | fingerprint "sha512" -}}
-  {{ $artifactForm := $artifactForm | minify | fingerprint "sha512" -}}
   {{ $artifactPage := $artifactPage | minify | fingerprint "sha512" -}}
-  {{ $replayWeb := $replayWeb | minify | fingerprint "sha512" -}}
   {{ $clipboardCopyButton := $clipboardCopyButton | minify | fingerprint "sha512" -}}
   {{ $tooltips := $tooltips | minify | fingerprint "sha512" -}}
 
@@ -99,15 +80,6 @@
       defer
       integrity="{{ $bs.Data.Integrity }}"
       src="{{ $bs.RelPermalink }}"
-    ></script>
-  {{ end -}}
-
-  {{ if $loadArtifactForm -}}
-    <script
-      crossorigin="anonymous"
-      defer
-      integrity="{{ $artifactForm.Data.Integrity }}"
-      src="{{ $artifactForm.RelPermalink }}"
     ></script>
   {{ end -}}
 
@@ -142,15 +114,6 @@
       defer
       integrity="{{ $search.Data.Integrity }}"
       src="{{ $search.Permalink }}"
-    ></script>
-  {{ end -}}
-
-  {{ if $loadReplayWeb -}}
-    <script
-      crossorigin="anonymous"
-      defer
-      integrity="{{ $replayWeb.Data.Integrity }}"
-      src="{{ $replayWeb.Permalink }}"
     ></script>
   {{ end -}}
 
