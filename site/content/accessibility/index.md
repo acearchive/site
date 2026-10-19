@@ -1,7 +1,6 @@
 ---
 title: "Accessibility"
 description: "How to report accessibility issues with this website"
-date: 2023-10-11T11:32:00-04:00
 images: []
 ---
 

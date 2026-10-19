@@ -1,7 +1,6 @@
 ---
 title: "Contact"
 description: "How to contact us"
-date: 2022-05-10T16:22:57-04:00
 images: []
 ---
 

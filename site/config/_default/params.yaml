@@ -35,10 +35,7 @@ domainTLD: "acearchive.lgbt"
 titleHome: "Ace Archive"
 
 # JSON-LD
-schemaType: "Organization"
-schemaName: "Ace Archive"
-schemaAuthor: "Frawley"
-schemaAuthorGitHub: "https://github.com/justlark"
+schemaOrgName: "Ace Archive"
 schemaLocale: "en-US"
 schemaLogo: "https://static.acearchive.lgbt/images/logo-transparent.webp"
 schemaLogoWidth: 912

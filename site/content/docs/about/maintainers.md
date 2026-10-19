@@ -1,6 +1,5 @@
 ---
 title: "About us"
-date: 2022-12-18T01:03:36-05:00
 menu:
   docs:
     parent: "about"
