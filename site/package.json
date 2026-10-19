@@ -11,11 +11,6 @@
     "type": "git",
     "url": "https://github.com/acearchive/site"
   },
-  "author": {
-    "name": "Frawley",
-    "email": "frawley@duck.com",
-    "url": "https://github.com/frawleyskid"
-  },
   "license": "MIT",
   "browserslist": [
     "defaults"
