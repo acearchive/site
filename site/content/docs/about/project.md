@@ -6,6 +6,7 @@ menu:
 weight: 101
 aliases:
   - "/about"
+  - "/docs/about"
   - "/docs/about/what-is-ace-archive"
   - "/docs/about/about-the-technology"
   - "/docs/about/linking-to-content"

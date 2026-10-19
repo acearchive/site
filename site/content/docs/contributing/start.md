@@ -7,6 +7,7 @@ menu:
 weight: 201
 aliases:
   - "/contribute"
+  - "/docs/contributing"
   - "/docs/contributing/getting-started"
   - "/docs/contributing/uploading-files"
   - "/docs/contributing/hosting-artifacts"
