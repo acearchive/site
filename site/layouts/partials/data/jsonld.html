@@ -1,5 +1,6 @@
 {{ $data := "" }}
-{{ $url := printf "%s%s" site.Params.jsonldBaseUrl . }}
+{{/* The full graph is served at the base URL without the trailing slash. */}}
+{{ $url := printf "%s%s" site.Params.jsonldBaseUrl . | strings.TrimSuffix "/" }}
 {{ with try (resources.GetRemote $url) }}
   {{ with .Err }}
     {{ errorf "Failed fetching JSON-LD document (%s): %s" $url . }}

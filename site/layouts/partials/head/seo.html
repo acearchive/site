@@ -60,8 +60,9 @@
 {{/* Pages with a JSON-LD document from the Omeka Data Connector link to it
   above, and also embed it here, because search engines only read inline
   JSON-LD. Unmarshalling it lets the template escape it safely for a script
-  element. */ -}}
-{{ if .OutputFormats.Get "jsonld" -}}
+  element. The artifacts section's document is the full graph, which is too
+  large to embed. */ -}}
+{{ if and (.OutputFormats.Get "jsonld") (ne .Kind "section") -}}
   <script type="application/ld+json">
     {{ partial "data/page-jsonld.html" . | transform.Unmarshal }}
   </script>
