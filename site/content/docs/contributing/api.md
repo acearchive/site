@@ -26,7 +26,7 @@ document](https://acearchive.lgbt/artifacts/orlando-the-asexual-manifesto/index.
 https://acearchive.lgbt/artifacts/orlando-the-asexual-manifesto
 ```
 
-Try querying following endpoints to see what JSON-LD data they return.
+Try querying the following endpoints to see what JSON-LD data they return.
 
 - [https://acearchive.lgbt/artifacts/](https://acearchive.lgbt/artifacts/index.jsonld)
 - [https://acearchive.lgbt/artifacts/orlando-the-asexual-manifesto/](https://acearchive.lgbt/artifacts/orlando-the-asexual-manifesto/index.jsonld)
