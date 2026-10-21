@@ -23,7 +23,7 @@ application/ld+json` header, you'll get [this JSON-LD
 document](https://acearchive.lgbt/artifacts/orlando-the-asexual-manifesto/index.jsonld).
 
 ```
-https://acearchive.lgbt/artifacts/orlando-the-asexual-manifesto
+GET https://acearchive.lgbt/artifacts/orlando-the-asexual-manifesto
 ```
 
 Try querying the following endpoints to see what JSON-LD data they return.
