@@ -14,6 +14,7 @@ dev: install
 # build the site
 [working-directory: "./site/"]
 build stage: install
+  npm run prebuild
   npm run build:{{ stage }}
 
 # deploy the site

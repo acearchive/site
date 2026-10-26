@@ -3,7 +3,10 @@
   matches the `@id`s in the Omeka Data Connector's JSON-LD documents.
 
   The URL is deliberately not escaped here. Hugo escapes it in permalinks but
-  writes the unescaped name to disk, which is what Cloudflare expects. */ -}}
+  writes the unescaped name to disk, which is what Cloudflare expects.
+
+  Term pages used to have slugified URLs, e.g. `/people/zoe-oreilly/`. Those are
+  kept as aliases so they redirect to the new URLs. */ -}}
 {{- $taxonomy := .taxonomy -}}
 {{- $data := partialCached "data/artifacts.html" .adapter | transform.Unmarshal -}}
 
@@ -13,11 +16,19 @@
 {{- end -}}
 
 {{- range uniq $names -}}
+  {{- /* Skip the alias if it would collide with a term's own URL. */ -}}
+  {{- $aliases := slice -}}
+  {{- $slug := urlize . -}}
+  {{- if not (in $names $slug) -}}
+    {{- $aliases = slice (printf "/%s/%s/" $taxonomy $slug) -}}
+  {{- end -}}
+
   {{- $.adapter.AddPage (dict
     "kind" "term"
     "path" .
     "title" .
     "url" (printf "/%s/%s/" $taxonomy .)
+    "aliases" $aliases
     "outputs" (slice "html" "jsonld")
   ) -}}
 {{- end -}}
