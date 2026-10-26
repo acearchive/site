@@ -1,5 +1,5 @@
 @media (prefers-color-scheme: dark) {
-  main {
+  :root {
     color-scheme: dark;
     --color-fg-default: #c9d1d9;
     --color-fg-muted: #8b949e;
@@ -17,7 +17,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  main {
+  :root {
     color-scheme: light;
     --color-fg-default: #24292f;
     --color-fg-muted: #57606a;
@@ -54,59 +54,57 @@ body {
   }
 }
 
-main {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+:root {
   margin: 0;
   color: var(--color-fg-default);
   background-color: var(--color-canvas-default);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
 }
 
-main details,
-main figcaption,
-main figure {
+details,
+figcaption,
+figure {
   display: block;
 }
 
-main summary {
+summary {
   display: list-item;
 }
 
-main [hidden] {
+[hidden] {
   display: none !important;
 }
 
-main a {
+a {
   background-color: transparent;
   color: var(--color-accent-fg);
   text-decoration: none;
 }
 
-main a:active,
-main a:hover {
+a:active,
+a:hover {
   outline-width: 0;
 }
 
-main abbr[title] {
+abbr[title] {
   border-bottom: none;
   text-decoration: underline dotted;
 }
 
-main b,
-main strong {
+b,
+strong {
   font-weight: 600;
 }
 
-main dfn {
+dfn {
   font-style: italic;
 }
 
-main h1 {
+h1 {
   margin: 0.67em 0;
   font-weight: 600;
   padding-bottom: 0.3em;
@@ -114,51 +112,51 @@ main h1 {
   border-bottom: 1px solid var(--color-border-muted);
 }
 
-main mark {
+mark {
   background-color: var(--color-attention-subtle);
   color: var(--color-text-primary);
 }
 
-main small {
+small {
   font-size: 90%;
 }
 
-main sub,
-main sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
-main sub {
+sub {
   bottom: -0.25em;
 }
 
-main sup {
+sup {
   top: -0.5em;
 }
 
-main img {
+img {
   border-style: none;
   max-width: 100%;
   box-sizing: content-box;
   background-color: var(--color-canvas-default);
 }
 
-main code,
-main kbd,
-main pre,
-main samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
 
-main figure {
+figure {
   margin: 1em 40px;
 }
 
-main hr {
+hr {
   box-sizing: content-box;
   overflow: hidden;
   background: transparent;
@@ -170,7 +168,7 @@ main hr {
   border: 0;
 }
 
-main input {
+input {
   font: inherit;
   margin: 0;
   overflow: visible;
@@ -179,72 +177,32 @@ main input {
   line-height: inherit;
 }
 
-main [type="button"],
-main [type="reset"],
-main [type="submit"] {
-  -webkit-appearance: button;
-}
-
-main [type="button"]::-moz-focus-inner,
-main [type="reset"]::-moz-focus-inner,
-main [type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-main [type="button"]:-moz-focusring,
-main [type="reset"]:-moz-focusring,
-main [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-main [type="checkbox"],
-main [type="radio"] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-main [type="number"]::-webkit-inner-spin-button,
-main [type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-main [type="search"] {
-  -webkit-appearance: textfield;
+[type="search"] {
   outline-offset: -2px;
 }
 
-main [type="search"]::-webkit-search-cancel-button,
-main [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-main ::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54;
-}
-
-main ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
-}
-
-main a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-main hr::before {
+hr::before {
   display: table;
   content: "";
 }
 
-main hr::after {
+hr::after {
   display: table;
   clear: both;
   content: "";
 }
 
-main table {
+table {
   border-spacing: 0;
   border-collapse: collapse;
   display: block;
@@ -253,24 +211,23 @@ main table {
   overflow: auto;
 }
 
-main td,
-main th {
+td,
+th {
   padding: 0;
 }
 
-main details summary {
+details summary {
   cursor: pointer;
 }
 
-main details:not([open]) > *:not(summary) {
+details:not([open]) > *:not(summary) {
   display: none !important;
 }
 
-main kbd {
+kbd {
   display: inline-block;
   padding: 3px 5px;
-  font: 11px ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-    Liberation Mono, monospace;
+  font: 11px ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   line-height: 10px;
   color: var(--color-fg-default);
   vertical-align: middle;
@@ -281,122 +238,102 @@ main kbd {
   box-shadow: inset 0 -1px 0 var(--color-neutral-muted);
 }
 
-main h1,
-main h2,
-main h3,
-main h4,
-main h5,
-main h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 600;
   line-height: 1.25;
 }
 
-main h2 {
+h2 {
   font-weight: 600;
   padding-bottom: 0.3em;
   font-size: 1.5em;
   border-bottom: 1px solid var(--color-border-muted);
 }
 
-main h3 {
+h3 {
   font-weight: 600;
   font-size: 1.25em;
 }
 
-main h4 {
+h4 {
   font-weight: 600;
   font-size: 1em;
 }
 
-main h5 {
+h5 {
   font-weight: 600;
   font-size: 0.875em;
 }
 
-main h6 {
+h6 {
   font-weight: 600;
   font-size: 0.85em;
   color: var(--color-fg-muted);
 }
 
-main p {
+p {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-main blockquote {
+blockquote {
   margin: 0;
   padding: 0 1em;
   color: var(--color-fg-muted);
   border-left: 0.25em solid var(--color-border-default);
 }
 
-main ul,
-main ol {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 2em;
 }
 
-main ol ol,
-main ul ol {
+ol ol,
+ul ol {
   list-style-type: lower-roman;
 }
 
-main ul ul ol,
-main ul ol ol,
-main ol ul ol,
-main ol ol ol {
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
   list-style-type: lower-alpha;
 }
 
-main dd {
+dd {
   margin-left: 0;
 }
 
-main tt,
-main code {
-  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-    Liberation Mono, monospace;
+tt,
+code {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   font-size: 12px;
 }
 
-main pre {
+pre {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-    Liberation Mono, monospace;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   font-size: 12px;
   word-wrap: normal;
 }
 
-main ::placeholder {
+::placeholder {
   color: var(--color-fg-subtle);
   opacity: 1;
 }
 
-main input::-webkit-outer-spin-button,
-main input::-webkit-inner-spin-button {
-  margin: 0;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-main [data-catalyst] {
+[data-catalyst] {
   display: block;
-}
-
-main::before {
-  display: table;
-  content: "";
-}
-
-main::after {
-  display: table;
-  clear: both;
-  content: "";
 }
 
 main > *:first-child {
@@ -407,92 +344,92 @@ main > *:last-child {
   margin-bottom: 0 !important;
 }
 
-main a:not([href]) {
+a:not([href]) {
   color: inherit;
   text-decoration: none;
 }
 
-main p,
-main blockquote,
-main ul,
-main ol,
-main dl,
-main table,
-main pre,
-main details {
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre,
+details {
   margin-top: 0;
   margin-bottom: 16px;
 }
 
-main blockquote > :first-child {
+blockquote > :first-child {
   margin-top: 0;
 }
 
-main blockquote > :last-child {
+blockquote > :last-child {
   margin-bottom: 0;
 }
 
-main sup > a::before {
+sup > a::before {
   content: "[";
 }
 
-main sup > a::after {
+sup > a::after {
   content: "]";
 }
 
-main h1 tt,
-main h1 code,
-main h2 tt,
-main h2 code,
-main h3 tt,
-main h3 code,
-main h4 tt,
-main h4 code,
-main h5 tt,
-main h5 code,
-main h6 tt,
-main h6 code {
+h1 tt,
+h1 code,
+h2 tt,
+h2 code,
+h3 tt,
+h3 code,
+h4 tt,
+h4 code,
+h5 tt,
+h5 code,
+h6 tt,
+h6 code {
   padding: 0 0.2em;
   font-size: inherit;
 }
 
-main ol[type="1"] {
+ol[type="1"] {
   list-style-type: decimal;
 }
 
-main ol[type="a"] {
+ol[type="a"] {
   list-style-type: lower-alpha;
 }
 
-main ol[type="i"] {
+ol[type="i"] {
   list-style-type: lower-roman;
 }
 
-main div > ol:not([type]) {
+div > ol:not([type]) {
   list-style-type: decimal;
 }
 
-main ul ul,
-main ul ol,
-main ol ol,
-main ol ul {
+ul ul,
+ul ol,
+ol ol,
+ol ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-main li > p {
+li > p {
   margin-top: 16px;
 }
 
-main li + li {
+li + li {
   margin-top: 0.25em;
 }
 
-main dl {
+dl {
   padding: 0;
 }
 
-main dl dt {
+dl dt {
   padding: 0;
   margin-top: 16px;
   font-size: 1em;
@@ -500,44 +437,44 @@ main dl dt {
   font-weight: 600;
 }
 
-main dl dd {
+dl dd {
   padding: 0 16px;
   margin-bottom: 16px;
 }
 
-main table th {
+table th {
   font-weight: 600;
 }
 
-main table th,
-main table td {
+table th,
+table td {
   padding: 6px 13px;
   border: 1px solid var(--color-border-default);
 }
 
-main table tr {
+table tr {
   background-color: var(--color-canvas-default);
   border-top: 1px solid var(--color-border-muted);
 }
 
-main table tr:nth-child(2n) {
+table tr:nth-child(2n) {
   background-color: var(--color-canvas-subtle);
 }
 
-main table img {
+table img {
   background-color: transparent;
 }
 
-main img[align="right"] {
+img[align="right"] {
   padding-left: 20px;
 }
 
-main img[align="left"] {
+img[align="left"] {
   padding-right: 20px;
 }
 
-main code,
-main tt {
+code,
+tt {
   padding: 0.2em 0.4em;
   margin: 0;
   font-size: 85%;
@@ -545,20 +482,20 @@ main tt {
   border-radius: 6px;
 }
 
-main code br,
-main tt br {
+code br,
+tt br {
   display: none;
 }
 
-main del code {
+del code {
   text-decoration: inherit;
 }
 
-main pre code {
+pre code {
   font-size: 100%;
 }
 
-main pre > code {
+pre > code {
   padding: 0;
   margin: 0;
   word-break: normal;
@@ -567,7 +504,7 @@ main pre > code {
   border: 0;
 }
 
-main pre {
+pre {
   padding: 16px;
   overflow: auto;
   font-size: 85%;
@@ -576,8 +513,8 @@ main pre {
   border-radius: 6px;
 }
 
-main pre code,
-main pre tt {
+pre code,
+pre tt {
   display: inline;
   max-width: auto;
   padding: 0;
@@ -587,8 +524,4 @@ main pre tt {
   word-wrap: normal;
   background-color: transparent;
   border: 0;
-}
-
-main ::-webkit-calendar-picker-indicator {
-  filter: invert(50%);
 }
