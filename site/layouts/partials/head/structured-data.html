@@ -89,7 +89,7 @@
         }
         }{{ end }}]
     }
-    {{- if and (eq .Kind "page") (or (eq .Section "blog") (eq .Section "docs")) -}}
+    {{- if and (eq .Kind "page") (or (eq .Section "blog") (eq .Type "docs")) -}}
     ,
     {
       "@type": "Article",

@@ -9,6 +9,7 @@ aliases:
   - "/submit"
   - "/new-artifact"
   - "/docs/contributing/pull-request"
+  - "/docs/contributing/by-email"
 ---
 
 If you want to propose content to be added to the archive, you can email us:
@@ -16,7 +17,7 @@ If you want to propose content to be added to the archive, you can email us:
 [contact@acearchive.lgbt](mailto:contact@acearchive.lgbt)
 
 In your email, provide the following information. Also check out the [best
-practices]({{<ref "docs/contributing/best-practices" >}}) page for more
+practices]({{<ref "about/best-practices" >}}) page for more
 information about what makes a good submission.
 
 ## Context and significance {#context}

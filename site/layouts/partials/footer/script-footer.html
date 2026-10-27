@@ -1,6 +1,6 @@
 {{- $iconSprite := resources.Get "icons/bootstrap-icons.svg" | resources.Minify | resources.Fingerprint -}}
 
-{{ $docsPages := where .Site.Pages "Section" "docs" }}
+{{ $docsPages := where .Site.Pages "Type" "docs" }}
 {{ $docsPagesData := slice }}
 {{ range $page := $docsPages -}}
   {{ $docsPagesData = $docsPagesData | append (dict "title" $page.Title "url" $page.RelPermalink "summary" $page.Description "content" $page.Content) }}
@@ -41,7 +41,7 @@
 
 {{ $jsBundle := resources.Concat "js/main.ts" $jsSlice | js.Build -}}
 
-{{ $loadSearch := eq .Section "docs" "archive" "artifacts" "identities" "decades" "people" "collections" -}}
+{{ $loadSearch := or (eq .Type "docs") (eq .Section "archive" "artifacts" "identities" "decades" "people" "collections") -}}
 {{ $loadArtifactPage := eq .Section "artifacts" -}}
 
 {{ if eq (hugo.Environment) "development" -}}

@@ -5,10 +5,12 @@ menu:
   docs:
     parent: "contributing"
 weight: 205
+aliases:
+  - "/docs/contributing/api"
 ---
 
 If you want to export data from Ace Archive, you can either download the nightly
-[data export]({{< ref "docs/contributing/export.md" >}}), or you can call this
+[data export]({{< ref "about/download.md" >}}), or you can call this
 API.
 
 Instead of a traditional REST API, Ace Archive uses

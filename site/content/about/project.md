@@ -1,5 +1,6 @@
 ---
 title: "About the project"
+description: "Ace Archive is a project to document the history of queer communities, with a particular focus on the asexual, aromantic, and other aspec communities."
 menu:
   docs:
     parent: "about"
@@ -10,6 +11,8 @@ aliases:
   - "/docs/about/what-is-ace-archive"
   - "/docs/about/about-the-technology"
   - "/docs/about/linking-to-content"
+  - "/docs"
+  - "/docs/about/project"
 ---
 
 Ace Archive is a project to document the history of queer communities, with a
@@ -26,4 +29,4 @@ license](https://choosealicense.com/licenses/mit/), which means that anyone is
 free to [read the source code of the website](https://github.com/acearchive) and
 use it however they wish. It also means that much like a wiki, anyone can help
 contribute to the archive, and we have [documentation]({{< ref
-"docs/contributing/start.md" >}}) explaining how to do that.
+"about/contributing.md" >}}) explaining how to do that.

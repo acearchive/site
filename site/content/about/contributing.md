@@ -1,6 +1,6 @@
 ---
-title: "Getting started"
-description: "Start here"
+title: "Contributing to the project"
+description: "How you can contribute to Ace Archive"
 menu:
   docs:
     parent: "contributing"
@@ -12,6 +12,7 @@ aliases:
   - "/docs/contributing/uploading-files"
   - "/docs/contributing/hosting-artifacts"
   - "/docs/contributing/artifact-files"
+  - "/docs/contributing/start"
 ---
 
 Anyone can help contribute to Ace Archive, and there are various ways to do so.
@@ -38,7 +39,7 @@ If you're looking to contribute something to the archive, you can submit a
 proposal. While we work on implementing a more streamlined process, you can just
 email us.
 
-{{< link-button path="/docs/contributing/by-email.md" >}}
+{{< link-button path="/about/by-email.md" >}}
 Propose content
 {{< /link-button >}}
 
@@ -48,6 +49,6 @@ Information networks are more resilient when they're more distributed. You can
 join the ranks of guerilla archivists by downloading a full copy of Ace Archive
 to back up, mirror, and share.
 
-{{< link-button path="/docs/contributing/export.md" >}}
+{{< link-button path="/about/download.md" >}}
 Download the archive
 {{< /link-button >}}

@@ -5,6 +5,8 @@ menu:
   docs:
     parent: "contributing"
 weight: 204
+aliases:
+  - "/docs/contributing/export"
 ---
 
 _"Information networks are more resilient when they're more distributed."_

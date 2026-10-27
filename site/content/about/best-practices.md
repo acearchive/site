@@ -5,6 +5,8 @@ menu:
   docs:
     parent: "contributing"
 weight: 203
+aliases:
+  - "/docs/contributing/best-practices"
 ---
 
 This page outlines some best practices to follow when contributing content to

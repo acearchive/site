@@ -1,9 +1,12 @@
 ---
 title: "About us"
+description: "Hey, I'm Frawley (they/it)!"
 menu:
   docs:
     parent: "about"
 weight: 102
+aliases:
+  - "/docs/about/maintainers"
 ---
 
 Hey, I'm Frawley (they/it)!
@@ -25,5 +28,5 @@ The intent was for this site to serve two purposes:
 2. Host files that don't otherwise have a permanent home on the web.
 
 If you happen to be particularly knowledgeable about aro and ace history or have
-files you want to contribute, [check out the docs]({{< ref
-"docs/contributing/start" >}}) or [get in touch]({{< ref "contact" >}})!
+files you want to contribute, [check out the docs]({{< ref "about/contributing"
+>}}) or [get in touch]({{< ref "contact" >}})!

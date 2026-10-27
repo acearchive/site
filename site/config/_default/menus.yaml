@@ -1,9 +1,9 @@
 main:
   - name: "About"
-    url: "/docs/about/project"
+    url: "/about/project/"
     weight: 10
   - name: "Contribute"
-    url: "/docs/contributing/start"
+    url: "/about/contributing/"
     weight: 20
   - name: "Archive"
     url: "/artifacts/"
@@ -11,11 +11,9 @@ main:
 
 docs:
   - name: "About"
-    url: "/docs/about"
     identifier: "about"
     weight: 10
   - name: "Contributing"
-    url: "/docs/contributing"
     identifier: "contributing"
     weight: 20
 

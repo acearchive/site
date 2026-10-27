@@ -6,6 +6,8 @@ menu:
     parent: "contributing"
 weight: 203
 draft: true
+aliases:
+  - "/docs/contributing/web-archives"
 ---
 
 Occasionally, you'll find a website that the [Wayback
