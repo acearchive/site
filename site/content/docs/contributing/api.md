@@ -39,3 +39,21 @@ items in the collection. The specific properties we use are not currently
 considered stable API. Additionally, because two semantically identical JSON-LD
 documents can be structured very differently, the exact JSON representation of
 this metadata isn't guaranteed to be stable.
+
+You may notice some some URIs in the JSON-LD graph end with a `#this` fragment.
+This distinguishes **real-world objects** from **web pages**. For example, take
+the following URI:
+
+```
+https://acearchive.lgbt/a/MKbNWmmhCog6/
+```
+
+It is ambiguous whether the URI above represents *The Asexual Manifesto*, a
+historical document, or [this web
+page](https://acearchive.lgbt/artifacts/orlando-the-asexual-manifesto/) about
+that document. In the knowledge graph, these are distinct objects—a
+[`CreativeWork`](https://schema.org/CreativeWork) vs a
+[`WebPage`](https://schema.org/WebPage).
+
+In the JSON-LD API, URIs that end in `#this` represent real-world objects. This
+approach is [recommended by the W3C](https://www.w3.org/TR/cooluris/).
