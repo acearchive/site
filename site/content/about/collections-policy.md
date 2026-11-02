@@ -1,5 +1,5 @@
 ---
-title: "Collections Policy"
+title: "Collections policy"
 description: "The collections policy for the Ace Archive project"
 menu:
   docs:
