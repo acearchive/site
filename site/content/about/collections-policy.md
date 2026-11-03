@@ -15,18 +15,21 @@ focus on communities in the asexual and aromantic spectrum.
 
 ## Values {#values}
 
-- **Equitable**: Equity means affirming identity, honoring self-determination,
-uplifting marginalized voices, and challenging harmful power structures and
-social hierarchies.
-- **Durable**: The project should be resilient to changes in funding,
+- **Dignity**: Archival work is inherently subjective. When interpreting and
+labeling materials, the collection should affirm identity and honor
+self-determination.
+- **Justice**: Archival work is inherently political. The project should uplift
+marginalized voices and challenge harmful power structures and social
+hierarchies.
+- **Durability**: The project should be resilient to changes in funding,
 technology, infrastructure, and maintainership. The collection should outlast
 the project.
-- **Accessible**: The collection should be made available and accessible to as
-many people as possible. Barriers to access are a social problem, and we lead
+- **Accessibility**: The collection should be made available and accessible to
+as many people as possible. Barriers to access are a social problem, and we lead
 with the belief that they can be overcome.
-- **Transparent**: Transparency in decision-making builds community trust.
+- **Transparency**: Transparency in decision-making builds community trust.
 Transparency is prerequisite to accountability.
-- **Collaborative**: We can only effect radical change by standing together.
+- **Community**: We can only effect radical change by standing together.
 Building community is not in service of the mission; it is the mission.
 
 ## Scope {#scope}
