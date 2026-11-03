@@ -1,6 +1,6 @@
 ---
 title: "Collections policy"
-description: "The collections policy for the Ace Archive project"
+description: "The mission, purpose, scope, and core values of the Ace Archive project"
 menu:
   docs:
     parent: "about"
