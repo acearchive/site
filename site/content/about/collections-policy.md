@@ -32,6 +32,22 @@ Transparency is prerequisite to accountability.
 - **Community**: We can only effect radical change by standing together.
 Building community is not in service of the mission; it is the mission.
 
+## Purpose {#purpose}
+
+Asexual and aromantic history are underdocumented; historical materials relevant
+to the history of this community are rarely labeled as such in archival
+collections.
+
+Much of asexual and aromantic history is documented informally through blogs,
+message boards, social media posts, and other similar media. This is a fragile
+situation; when a site goes down or an account is deleted, this history is lost.
+
+The purpose of Ace Archive is twofold:
+
+1. Consolidate and label historical materials to make them easier to find and
+   access.
+2. Give materials in danger of becoming lost media a stable home on the web.
+
 ## Scope {#scope}
 
 Ace Archive is a digital archive; it does not accept physical materials.
