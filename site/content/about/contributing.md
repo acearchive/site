@@ -52,3 +52,5 @@ to back up, mirror, and share.
 {{< link-button path="/about/download.md" >}}
 Download the archive
 {{< /link-button >}}
+
+<hr>

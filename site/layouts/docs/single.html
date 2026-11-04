@@ -32,14 +32,6 @@
 			</nav>
 			{{ end -}}
 			{{ .Content | safeHTML }}
-			{{ partial "main/docs-navigation.html" . }}
-			<!--
-			{{ if not .Site.Params.options.collapsibleSidebar -}}
-				{{ partial "main/docs-navigation.html" . }}
-			{{ else -}}
-				<div class="my-n3"></div>
-			{{ end -}}
-			-->
 		</main>
 	</div>
 {{ end }}

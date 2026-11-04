@@ -278,10 +278,6 @@
   }
 }
 
-[data-dark-mode] body .docs-navigation {
-  border-top: 1px solid $border-dark;
-}
-
 [data-dark-mode] body pre code::-webkit-scrollbar-thumb {
   background: $gray-400;
 }
