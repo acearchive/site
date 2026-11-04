@@ -5,6 +5,8 @@ menu:
   docs:
     parent: "about"
 weight: 103
+aliases:
+  - "/about/collections-policy"
 ---
 
 ## Mission {#mission}

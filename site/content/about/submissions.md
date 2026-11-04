@@ -10,15 +10,17 @@ aliases:
   - "/new-artifact"
   - "/docs/contributing/pull-request"
   - "/docs/contributing/by-email"
+  - "/about/by-email"
 ---
 
 If you want to propose content to be added to the archive, you can email us:
 
 [contact@acearchive.lgbt](mailto:contact@acearchive.lgbt)
 
-In your email, provide the following information. Also check out the [best
-practices]({{<ref "about/best-practices" >}}) page for more
-information about what makes a good submission.
+In your email, provide the following information. Also check out our
+[collections policy]({{< ref "about/policies" >}}) and [contributor
+guidelines]({{<ref "about/guidelines" >}}) for more information about what makes
+a good submission.
 
 ## Context and significance {#context}
 

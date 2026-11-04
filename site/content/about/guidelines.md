@@ -1,16 +1,17 @@
 ---
-title: "Best practices for contributing"
-description: "Best practices for contributing to the archive"
+title: "Contributor guidelines"
+description: "Guidelines for contributing to the archive"
 menu:
   docs:
     parent: "contributing"
 weight: 203
 aliases:
   - "/docs/contributing/best-practices"
+  - "/about/best-practices"
 ---
 
-This page outlines some best practices to follow when contributing content to
-Ace Archive.
+This page outlines some guidelines and best practices to follow when
+contributing content to Ace Archive.
 
 ## Respect creators {#creators}
 
@@ -26,10 +27,10 @@ ref "contact" >}}).
 
 ## Respect the privacy of individuals {#privacy}
 
-When listing the people associated with an artifact, make sure to respect the
-privacy of individuals. This means using handles or usernames when a person
-typically goes by a pseudonym online. Additionally, you must **never** use a
-person's deadname.
+When listing the people associated with historical materials, make sure to
+respect the privacy of individuals. This means using handles or usernames when a
+person typically goes by a pseudonym online. Additionally, you must **never**
+use a person's deadname.
 
 If you have any privacy concerns about content on this site, feel free to
 [contact us]({{< ref "contact" >}}).
@@ -42,9 +43,9 @@ considered outdated or offensive. It's important, however, that we do not
 attempt to retroactively apply contemporary identity labels to people who did or
 do not use those labels themselves.
 
-When listing the identities associated with an artifact, prefer the identity
-labels that appear in the text or that the people described use to identify
-themselves. However, if it is clear that the text is not attempting to
+When listing the identities associated with historical materials, prefer the
+identity labels that appear in the text or that the people described use to
+identify themselves. However, if it is clear that the text is not attempting to
 accurately represent the identities of the people described, you do not need to
 mirror the language it uses.
 
@@ -133,7 +134,7 @@ attaching it to your submission. You can find a full list of sites the tool
 supports downloading videos from
 [here](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md).
 
-## Look to existing artifacts as examples {#examples}
+## Look to existing materials as examples {#examples}
 
-If you're not sure about something, look at existing artifacts in the archive as
-an example!
+If you're not sure about something, look at existing materials in the archive as
+examples!

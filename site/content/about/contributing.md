@@ -39,7 +39,7 @@ If you're looking to contribute something to the archive, you can submit a
 proposal. While we work on implementing a more streamlined process, you can just
 email us.
 
-{{< link-button path="/about/by-email.md" >}}
+{{< link-button path="/about/submissions.md" >}}
 Propose content
 {{< /link-button >}}
 
