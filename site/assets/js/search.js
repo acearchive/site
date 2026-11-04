@@ -194,7 +194,7 @@ function indexDocsSearch(search, suggestions) {
   for (const [i, page] of docsPages.entries()) {
     index.add({
       id: `docs/${i}`,
-      href: new URL(page.url).pathname,
+      href: page.url,
       title: page.title,
       summary: page.summary,
       content: page.content,
