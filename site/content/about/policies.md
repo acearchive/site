@@ -71,11 +71,12 @@ so highly recent materials may not be accepted. Links to tertiary sources like
 historical retrospectives, timelines, and other archival collections are an
 exception.
 
-Currently, the collection is primarily focused on queer history in the United
-States. This comes from a lack of expertise and cultural context on the part of
-the project maintainers and does not reflect the intended scope of the project.
-Materials from other geographic and cultural contexts are welcome.
+Materials from any geographic region or cultural context are welcome. Currently,
+the collection is primarily focused on queer history in the United States. This
+comes from a lack of expertise on the part of the project maintainers and does
+not reflect the intended scope of the project.
 
-Currently, the collection consists primarily of English-language materials.
-Materials in other languages are welcome—with or without translation—as long as
-sufficient context is provided for the maintainers to assess them.
+Materials in any language are welcome—with or without translation—as long as
+sufficient context is provided for the English-speaking maintainers to assess
+them. Currently, the collection consists primarily of English-language
+materials; this does not reflect the intended scope of the project.
